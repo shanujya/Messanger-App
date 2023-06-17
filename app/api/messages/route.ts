@@ -8,7 +8,7 @@ export async function POST(
 ){
     try{
       const currentUser = await getCurrentUser();
-      const body =  request.json();
+      const body = await request.json();
       const {
         message,
         image,
